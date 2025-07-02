@@ -1,15 +1,4 @@
-const projects = [
-  {
-    title: "Portfolio Website",
-    description: "A modern responsive portfolio to showcase personal projects.",
-    tech: "HTML, CSS, JS",
-    link: "#"
-  },
-  {
-    title: "To-Do App",
-    description: "A simple yet powerful to-do list with local storage support.",
-    tech: "React, Tailwind",
-    link: "#"document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     console.log("Portfolio JavaScript loaded!");
 
     // --- Dynamic Projects Section ---
@@ -57,11 +46,33 @@ const projects = [
             technologies: ["React.js", "HTML5", "CSS3", "Responsive Design", "UI/UX"],
             githubLink: "https://github.com/ReddySujith883/responsive-framework", // Example, replace
             liveLink: "#"
+        },
+        // --- Projects from your new input, integrated and adjusted for existing structure ---
+        {
+            title: "Portfolio Website",
+            description: "A modern responsive portfolio to showcase personal projects, built with core web technologies.",
+            technologies: ["HTML", "CSS", "JavaScript"], // Changed 'tech' to 'technologies'
+            githubLink: "#", // Changed 'link' to 'githubLink'
+            liveLink: "#"
+        },
+        {
+            title: "To-Do App",
+            description: "A simple yet powerful to-do list with local storage support, demonstrating modern frontend frameworks.",
+            technologies: ["React", "Tailwind CSS"], // Changed 'tech' to 'technologies'
+            githubLink: "#", // Changed 'link' to 'githubLink'
+            liveLink: "#"
+        },
+        {
+            title: "Weather Dashboard",
+            description: "A dynamic weather application using the OpenWeatherMap API to display real-time weather data.",
+            technologies: ["JavaScript", "API Integration", "Bootstrap"], // Changed 'tech' to 'technologies'
+            githubLink: "#", // Changed 'link' to 'githubLink'
+            liveLink: "#"
         }
         // Add more projects following the same structure
     ];
 
-    const projectsContainer = document.getElementById('projects-container');
+    const projectsContainer = document.getElementById('projects-container'); // Corrected ID to match HTML
 
     if (projectsContainer) {
         projects.forEach(project => {
@@ -164,33 +175,4 @@ const projects = [
             }
         });
     });
-});
-
-  },
-  {
-    title: "Weather Dashboard",
-    description: "Weather app using OpenWeatherMap API.",
-    tech: "JavaScript, API, Bootstrap",
-    link: "#"
-  }
-];
-
-const projectContainer = document.getElementById('projects');
-
-projects.forEach(project => {
-  const card = document.createElement('div');
-  card.className = 'project-card';
-  card.innerHTML = `
-    <h3>${project.title}</h3>
-    <p>${project.description}</p>
-    <small><strong>Tech:</strong> ${project.tech}</small><br><br>
-    <a href="${project.link}" target="_blank">View Project</a>
-  `;
-  projectContainer.appendChild(card);
-});
-
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Message sent!');
-  this.reset();
 });
