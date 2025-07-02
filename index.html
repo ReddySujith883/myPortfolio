@@ -1,118 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Su | Portfolio</title>
+    <title>Sujith Kommareddy | Software Engineer Portfolio</title>
+    <!-- Link to your main CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Poppins for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons (e.g., for social media or project links) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <header>
-        <h1>Sujith Kommareddy</h1>
-        <p>Software Engineer</p>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Sujith Kommareddy</h1>
+            <p class="tagline">Software Engineer | Full Stack Developer</p>
+            <div class="social-links">
+                <a href="http://www.linkedin.com/in/sujith-kommareddy-8a4407267" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <!-- Replace with your actual GitHub profile link -->
+                <a href="https://github.com/ReddySujith883" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <!-- Add more social links as needed -->
+            </div>
+        </div>
     </header>
 
-    <section class="about">
-        <h2>About Me</h2>
-         <img src="gp.jpg" alt="Sujith Kumar Reddy Kommareddy Profile Picture" class="profile-picture">
-        <p>I'm Sujith Kumar Reddy Kommareddy, a Software Engineer with over 4 years of experience
-            in designing, developing, and maintaining scalable, high-performance web applications.
-            My expertise spans both backend and frontend technologies, utilizing Java (Spring Boot, Spring
-            MVC, Hibernate) and React.js.</p>
-        <p>I excel in building robust backend systems, including designing and consuming RESTful and GraphQL
-            APIs, and developing scalable microservices using Spring Boot. On the frontend, I am
-            proficient in JavaScript (ES6+), TypeScript, React.js, Redux, HTML5, CSS3, and Material UI, focusing on
-            creating responsive user interfaces.</p>
-        <p>My cloud and DevOps skills include deploying and managing applications on AWS (EC2, Lambda, RDS,
-            S3, Elastic Beanstalk) and Azure (App Services, Functions, SQL Database).
-            I'm highly experienced with Docker, Kubernetes, Jenkins, GitHub Actions, and Terraform for CI/CD
-            pipelines and infrastructure automation. I also possess strong knowledge of relational
-            databases like PostgreSQL, MySQL, and Oracle, as well as NoSQL databases such as MongoDB, and implement
-            caching solutions like Redis to optimize performance.</p>
-        <p>Throughout my career at companies like Capital One Financial and Hexaware
-            Technologies , I have designed scalable backend microservices, led transitions to
-            serverless architectures, and built intuitive user interfaces that significantly improved engagement and
-            reduced load timesI have also developed real-time streaming data pipelines
-            with Apache Kafka , constructed automated deployment workflows with Docker , and implemented robust security
-            mechanisms including OAuth2 and JWT.
-            I am adept at working in Agile environments, leading sprint planning, code reviews, and driving
-            continuous improvement.</p>
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <!-- Profile Picture - IMPORTANT: Replace 'images/profile.jpg' with your actual image path -->
+                <img src="images/profile.jpg" alt="Sujith Kumar Reddy Kommareddy Profile Picture" class="profile-picture">
+                <div class="about-text">
+                    <p>I'm Sujith Kumar Reddy Kommareddy, a Software Engineer with over 4 years of experience
+                        in designing, developing, and maintaining scalable, high-performance web applications.
+                        My expertise spans both backend and frontend technologies, utilizing Java (Spring Boot, Spring
+                        MVC, Hibernate) and React.js.</p>
+                    <p>I excel in building robust backend systems, including designing and consuming RESTful and GraphQL
+                        APIs, and developing scalable microservices using Spring Boot. On the frontend, I am
+                        proficient in JavaScript (ES6+), TypeScript, React.js, Redux, HTML5, CSS3, and Material UI, focusing on
+                        creating responsive user interfaces.</p>
+                    <p>My cloud and DevOps skills include deploying and managing applications on AWS (EC2, Lambda, RDS,
+                        S3, Elastic Beanstalk) and Azure (App Services, Functions, SQL Database).
+                        I'm highly experienced with Docker, Kubernetes, Jenkins, GitHub Actions, and Terraform for CI/CD
+                        pipelines and infrastructure automation. I also possess strong knowledge of relational
+                        databases like PostgreSQL, MySQL, and Oracle, as well as NoSQL databases such as MongoDB, and implement
+                        caching solutions like Redis to optimize performance.</p>
+                    <p>Throughout my career at companies like Capital One Financial and Hexaware
+                        Technologies, I have designed scalable backend microservices, led transitions to
+                        serverless architectures, and built intuitive user interfaces that significantly improved engagement and
+                        reduced load times. I have also developed real-time streaming data pipelines
+                        with Apache Kafka, constructed automated deployment workflows with Docker, and implemented robust security
+                        mechanisms including OAuth2 and JWT.
+                        I am adept at working in Agile environments, leading sprint planning, code reviews, and driving
+                        continuous improvement.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Projects</h2>
-        <div class="projects" id="projects"></div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
+                    <ul>
+                        <li>Java (J2EE, Spring Boot, Hibernate)</li>
+                        <li>Python, Node.js, Express.js, FastAPI</li>
+                        <li>RESTful APIs, Microservices, GraphQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Frontend Development</h3>
+                    <ul>
+                        <li>JavaScript, TypeScript, React.js, Next.js</li>
+                        <li>HTML5, CSS3, UI/UX Design, Responsive Web Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <ul>
+                        <li>AWS (EC2, S3, Lambda, RDS, API Gateway)</li>
+                        <li>Azure (App Services, Functions, SQL Database)</li>
+                        <li>Docker, Kubernetes, Terraform, CI/CD Pipelines</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases & Data</h3>
+                    <ul>
+                        <li>MySQL, PostgreSQL, MongoDB, Redis</li>
+                        <li>Data Modeling, SQL Optimization, Caching</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Practices</h3>
+                    <ul>
+                        <li>Git, GitHub, GitLab, Bitbucket, npm</li>
+                        <li>OAuth2, JWT, RBAC, API Gateway, Swagger, Postman</li>
+                        <li>JUnit, Mockito, Jest, Mocha, Cypress, Selenium</li>
+                        <li>Agile (Scrum/Kanban), JIRA, Confluence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="experience">
-        <h2>Experience</h2>
-
-        <p><strong>Software Engineer</strong><br>
-            <em>Capital One Financial</em> (Dec 2023 – Present | New Orleans, Louisiana)
-        </p>
-        <ul>
-            <li>Designed scalable microservices using Java and PostgreSQL, improving billing accuracy by 30%.</li>
-            <li>Led migration to AWS Lambda, reducing costs by 22% and boosting scalability.</li>
-            <li>Built responsive UIs with React.js and TypeScript, increasing user engagement by 18%.</li>
-            <li>Implemented Kafka-based real-time data pipelines, speeding ingestion by 55%.</li>
-            <li>Set up CI/CD pipelines with Docker, reducing release cycles by 45%.</li>
-            <li>Enhanced API performance with Redis caching and optimized SQL, improving retrieval by 38%.</li>
-            <li>Implemented OAuth2 and JWT for secure role-based access across services.</li>
-            <li>Contributed to Agile ceremonies, increasing team velocity by 25%.</li>
-        </ul>
-
-        <br>
-
-        <p><strong>Software Engineer</strong><br>
-            <em>Hexaware Technologies</em> (May 2021 - Aug 2022 | Hyderabad, India)
-        </p>
-        <ul>
-            <li>Developed backend services with Spring Boot, cutting report generation time by 90%.</li>
-            <li>Built reusable React.js components, reducing frontend redundancy by 35%.</li>
-            <li>Delivered microservices in Node.js, increasing data throughput by 28%.</li>
-            <li>Used Docker and IaC to automate deployments, speeding up provisioning by 50%.</li>
-            <li>Secured APIs with OAuth2 and improved developer onboarding with documentation.</li>
-            <li>Reduced post-release bugs by 60% with TDD and Selenium testing.</li>
-            <li>Optimized performance using Redis caching during high-traffic periods.</li>
-        </ul>
-
-        <br>
-
-        <p><strong>Junior Software Engineer</strong><br>
-            <em>Hexaware Technologies</em> (Jan 2020 – Apr 2021 | Hyderabad, India)
-        </p>
-        <ul>
-            <li>Created REST APIs using J2EE/Spring MVC, increasing transaction handling efficiency by 25%.</li>
-            <li>Developed responsive React.js interfaces, reducing bounce rates by 20%.</li>
-            <li>Deployed scalable apps on Azure, improving environment stability.</li>
-            <li>Built unit/integration test suites, boosting test coverage by 35%.</li>
-            <li>Streamlined workflows using Git and npm, reducing merge conflicts.</li>
-            <li>Contributed to Agile Kanban teams, ensuring 95% on-time delivery with high code quality.</li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Project cards will be dynamically loaded here by JavaScript -->
+            </div>
+        </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2>Experience</h2>
 
-    <section class="contact">
-        <h2>Contact</h2>
-        <form id="contactForm">
-            <label>Name</label>
-            <input type="text" required />
-            <label>Email</label>
-            <input type="email" required />
-            <label>Message</label>
-            <textarea rows="4" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+            <div class="job-entry">
+                <h3>Software Engineer</h3>
+                <p class="company-name">Capital One Financial</p>
+                <p class="job-duration">Dec 2023 – Present | New Orleans, Louisiana</p>
+                <ul>
+                    <li>Designed scalable microservices using Java and PostgreSQL, improving billing accuracy by 30% and reducing support tickets.</li>
+                    <li>Led transition of legacy services to serverless architecture on AWS Lambda with API Gateway, enhancing scalability and fault tolerance, reducing operational costs by 22%.</li>
+                    <li>Built intuitive, responsive user interfaces with React.js and TypeScript, optimizing component design and state management to improve patient portal engagement by 18% and decrease mobile load times by 40%.</li>
+                    <li>Developed real-time streaming and event-driven data pipelines using Apache Kafka to efficiently process high-volume data, increasing data ingestion speed by over 55%.</li>
+                    <li>Constructed automated deployment workflows with Docker, enabling CI/CD pipelines that shortened release cycles by 45% and improved deployment consistency.</li>
+                    <li>Improved API response times by integrating advanced caching solutions with Redis and optimizing complex SQL queries, boosting health record retrieval speeds by 38%.</li>
+                    <li>Implemented robust security mechanisms including OAuth2-based authentication and JWT for token management, enforcing strict role-based access control (RBAC).</li>
+                    <li>Collaborated with cross-functional teams using Agile methodologies, leading sprint planning, code reviews, and retrospective sessions to drive continuous improvement, increase team velocity by 25%.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Software Engineer</h3>
+                <p class="company-name">Hexaware Technologies</p>
+                <p class="job-duration">May 2021 - Aug 2022 | Hyderabad, India</p>
+                <ul>
+                    <li>Architected and maintained backend services using Java Spring Boot with MySQL and MongoDB, reducing financial report generation times by over 90%.</li>
+                    <li>Engineered and maintained fullstack web applications using React.js and TypeScript, focusing on UI/UX improvements that enhanced component reusability, reduced frontend code redundancy by 35%.</li>
+                    <li>Executed microservice-based solutions using Node.js and Express.js, enabling faster feature releases and enhanced service resilience, which increased backend data throughput by 28%.</li>
+                    <li>Automated environment provisioning and deployment pipelines leveraging containerization with Docker and infrastructure as code, which decreased manual deployment errors and sped up the provisioning process by more than 50%.</li>
+                    <li>Enhanced security of REST APIs by integrating OAuth2 authentication and maintaining comprehensive API documentation.</li>
+                    <li>Applied test-driven development (TDD) principles using JUnit and Mockito for backend Java services and employed Selenium for automated frontend testing, leading to a 60% reduction in post-release defects.</li>
+                    <li>Formed caching strategies using Redis to optimize response times for frequently accessed data, reducing backend load and significantly improving the user experience during high traffic periods.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <h3>Junior Software Engineer</h3>
+                <p class="company-name">Hexaware Technologies</p>
+                <p class="job-duration">Jan 2020 – Apr 2021 | Hyderabad, India</p>
+                <ul>
+                    <li>Architected and maintained RESTful APIs using J2EE and Spring MVC, improving transaction handling efficiency by 25% through effective session management and optimized servlet processing.</li>
+                    <li>Created interactive frontend components with React.js and HTML5, implementing responsive web design principles that enhanced accessibility and usability across desktop and mobile platforms, resulting in a 20% decrease in bounce rates.</li>
+                    <li>Participated in cloud migration projects leveraging Azure App Services to deploy scalable applications, automating deployment processes to improve environment consistency and reduce downtime during releases.</li>
+                    <li>Devised comprehensive unit and integration test suites using JUnit and Postman, increasing test coverage by 35% and enabling faster feedback loops and early bug detection.</li>
+                    <li>Utilized Git version control and npm for dependency management, streamlining development workflows and reducing merge conflicts by enforcing branching strategies and pull request reviews.</li>
+                    <li>Partnered in Agile Kanban teams to manage and prioritize development tasks effectively, ensuring 95% on-time delivery of features and bug fixes while maintaining high code quality standards.</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+                <div id="form-message" class="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 Sujith Kommareddy. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Sujith Kommareddy. All rights reserved.</p>
+        </div>
     </footer>
 
+    <!-- Link to your main JavaScript file -->
     <script src="script.js"></script>
 </body>
-
 </html>
