@@ -70,7 +70,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
-    const projectsContainer = document.getElementById('projects-container');
+    // CORRECTED: Changed 'projects-container' to 'projects' to match your HTML ID
+    const projectsContainer = document.getElementById('projects');
 
     if (projectsContainer) {
         projects.forEach(project => {
