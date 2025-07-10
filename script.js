@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "E-commerce Platform Backend",
             description: "Developed scalable microservices for a full-featured e-commerce platform using Spring Boot and PostgreSQL, handling user authentication, product catalog, and order processing. Implemented secure REST APIs.",
             technologies: ["Java", "Spring Boot", "PostgreSQL", "REST API", "Microservices"],
-            githubLink: "https://github.com/ReddySujith883/ecommerce-backend", // Replace with your actual GitHub link
+            githubLink: "https://github.com/Reddypreetham883/ecommerce-backend", // Replace with your actual GitHub link
             liveLink: "#" // Replace with a live demo link if available, or keep '#' if none
         },
         {
